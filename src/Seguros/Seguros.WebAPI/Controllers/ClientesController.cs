@@ -32,10 +32,19 @@ namespace Seguros.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Obtener cliente por ID (ADMINISTRADOR)
+        /// Obtener cliente por UserID
+        /// </summary>
+        [HttpGet("User/{userId}")]
+        public async Task<IActionResult> GetByUserId(int userId)
+        {
+            var query = new GetClienteByUserIdQuery { userId = userId };
+            var result = await _mediator.Send(query);
+            return result.Success ? Ok(result) : NotFound(result);
+        }
+        /// <summary>
+        /// Obtener cliente por UserID
         /// </summary>
         [HttpGet("{id}")]
-        [Authorize(Roles = "ADMINISTRADOR")]
         public async Task<IActionResult> GetById(int id)
         {
             var query = new GetClienteByIdQuery { Id = id };
@@ -102,23 +111,14 @@ namespace Seguros.WebAPI.Controllers
         /// <summary>
         /// Editar información personal (Cliente)
         /// </summary>
-        [HttpPatch("mi-informacion")]
+        [HttpPatch("UpdateMyInfo")]
         [Authorize(Roles = "CLIENTE")]
         public async Task<IActionResult> UpdateMyInfo([FromBody] UpdateClienteDto dto)
         {
-            var userId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value ?? "0");
             
-            // Buscar cliente por UserId
-            var query = new GetAllClientesQuery();
-            var clientes = await _mediator.Send(query);
-            var cliente = clientes.Data?.FirstOrDefault(c => c.Id == userId);
-            
-            if (cliente == null)
-                return NotFound(new { message = "Cliente no encontrado" });
-
             var command = new UpdateClienteCommand
             {
-                Id = cliente.Id,
+                Id = dto.IdCliente,
                 Direccion = dto.Direccion,
                 Telefono = dto.Telefono
             };

@@ -92,6 +92,7 @@ namespace Seguros.Core.DTOs
 
     public class UpdateClienteDto
     {
+        public int IdCliente { get; set; }
         [MaxLength(250, ErrorMessage = "La dirección no puede exceder 250 caracteres")]
         public string Direccion { get; set; }
         
