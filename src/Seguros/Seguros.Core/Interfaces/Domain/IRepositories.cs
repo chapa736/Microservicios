@@ -13,6 +13,7 @@ namespace Seguros.Core.Interfaces.Domain
 
     public interface IClienteRepository : IRepository<Cliente>
     {
+        Task<Cliente> GetByUserIdAsync(int id);
         Task<Cliente> GetByIdentificacionAsync(string numeroIdentificacion);
         Task<Cliente> GetByEmailAsync(string email);
         Task<bool> ExistsAsync(string numeroIdentificacion);
@@ -25,6 +26,7 @@ namespace Seguros.Core.Interfaces.Domain
         Task<IEnumerable<Poliza>> GetByEstatusAsync(int estatus);
         Task<IEnumerable<Poliza>> GetPolizasVigentesAsync();
         Task<IEnumerable<Poliza>> GetPolizasVencidasAsync();
+        Task DeleteAsyncByClienteIdAsync(int id);
     }
 
     public interface IUnitOfWork : IDisposable

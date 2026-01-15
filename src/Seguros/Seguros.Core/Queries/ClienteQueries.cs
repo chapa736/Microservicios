@@ -8,6 +8,10 @@ namespace Seguros.Core.Queries
     {
         public int Id { get; set; }
     }
+    public class GetClienteByUserIdQuery : IRequest<BaseResponse<ClienteDto>>
+    {
+        public int userId { get; set; }
+    }
 
     public class GetClienteByIdentificacionQuery : IRequest<BaseResponse<ClienteDto>>
     {

@@ -21,6 +21,12 @@ namespace Seguros.Infrastructure.Data
             const string sql = "SELECT * FROM Clientes WHERE Id = @Id";
             return await connection.QueryFirstOrDefaultAsync<Cliente>(sql, new { Id = id });
         }
+        public async Task<Cliente> GetByUserIdAsync(int id)
+        {
+            using var connection = new SqlConnection(_connectionString);
+            const string sql = "SELECT * FROM Clientes WHERE UserId = @Id";
+            return await connection.QueryFirstOrDefaultAsync<Cliente>(sql, new { Id = id });
+        }
 
         public async Task<Cliente> GetByIdentificacionAsync(string numeroIdentificacion)
         {
@@ -183,6 +189,13 @@ namespace Seguros.Infrastructure.Data
         {
             using var connection = new SqlConnection(_connectionString);
             const string sql = "DELETE FROM Polizas WHERE Id = @Id";
+            await connection.ExecuteAsync(sql, new { Id = id });
+        }
+
+        public async Task DeleteAsyncByClienteIdAsync(int id)
+        {
+            using var connection = new SqlConnection(_connectionString);
+            const string sql = "DELETE FROM Polizas WHERE IdCliente = @Id";
             await connection.ExecuteAsync(sql, new { Id = id });
         }
     }

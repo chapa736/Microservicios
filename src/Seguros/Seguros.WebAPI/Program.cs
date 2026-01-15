@@ -20,12 +20,12 @@ builder.Services.AddHealthChecksConfiguration(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Docker"))
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Finasist Seguros API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Seguros API v1");
         c.RoutePrefix = string.Empty;
     });
 }
@@ -34,8 +34,7 @@ if (app.Environment.IsDevelopment())
 app.UseSerilogRequestLogging();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-app.UseHttpsRedirection();
-app.UseCors(app.Environment.IsDevelopment() ? "AllowAll" : "Production");
+app.UseCors(app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Docker") ? "AllowAll" : "Production");
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -45,7 +44,7 @@ app.MapControllers();
 
 try
 {
-    Log.Information("Iniciando Finasist Seguros API");
+    Log.Information("Iniciando Seguros API");
     app.Run();
 }
 catch (Exception ex)

@@ -20,12 +20,12 @@ builder.Services.AddHealthChecksConfiguration(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Docker"))
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Finasist Auth API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth API v1");
         c.RoutePrefix = string.Empty; // Swagger en la raíz
     });
 }
@@ -35,8 +35,7 @@ app.UseSerilogRequestLogging();
 app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-app.UseHttpsRedirection();
-app.UseCors(app.Environment.IsDevelopment() ? "AllowAll" : "Production");
+app.UseCors(app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Docker") ? "AllowAll" : "Production");
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -46,7 +45,7 @@ app.MapControllers();
 
 try
 {
-    Log.Information("Iniciando Finasist Auth API");
+    Log.Information("Iniciando Auth API");
     app.Run();
 }
 catch (Exception ex)

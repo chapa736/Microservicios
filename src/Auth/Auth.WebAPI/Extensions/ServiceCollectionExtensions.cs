@@ -167,10 +167,9 @@ namespace Auth.WebAPI.Extensions
                           .AllowAnyMethod()
                           .AllowAnyHeader();
                 });
-
                 options.AddPolicy("Production", policy =>
                 {
-                    policy.WithOrigins("https://com", "https://app.com")
+                    policy.WithOrigins("http://localhost:4200")
                           .AllowAnyMethod()
                           .AllowAnyHeader()
                           .AllowCredentials();
