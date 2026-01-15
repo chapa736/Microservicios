@@ -1,13 +1,18 @@
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.Text;
-using MediatR;
-using Serilog;
-using Serilog.Events;
+using StackExchange.Redis;
+using Seguros.Core.Interfaces.Application;
 using Seguros.Core.Interfaces.Domain;
 using Seguros.Infrastructure.Data;
+using Seguros.Infrastructure.Services;
+using Serilog;
+using Serilog.Events;
 using System.Security.Claims;
+using System.Text;
 
 namespace Seguros.WebAPI.Extensions
 {
@@ -87,7 +92,7 @@ namespace Seguros.WebAPI.Extensions
         public static IServiceCollection AddSegurosServices(this IServiceCollection services, IConfiguration configuration)
         {
             // MediatR
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Seguros.Application.Handlers.CreateClienteCommandHandler).Assembly));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Seguros.Application.Handlers.CreatePolizaCommandHandler).Assembly));
 
             // JWT Configuration (solo validación, no generación)
             var jwtSettings = configuration.GetSection("JwtSettings");
@@ -160,6 +165,38 @@ namespace Seguros.WebAPI.Extensions
             // Dependency Injection - Repositorios y servicios de Seguros
             var connectionString = configuration.GetConnectionString("InsuranceDB");
             services.AddScoped<IUnitOfWork>(provider => new DapperUnitOfWork(connectionString));
+
+            // HttpClient para servicios HTTP
+            services.AddHttpClient<IAuthApiService, AuthApiService>();
+
+            // Cache Service
+            services.AddScoped<Seguros.Core.Interfaces.Application.ICacheService, Seguros.Infrastructure.Services.CacheService>();
+
+            // Redis Cache Configuration
+            var redisConnectionString = configuration["Redis:ConnectionString"];
+            var redisInstanceName = configuration["Redis:InstanceName"] ?? "Seguros:";
+
+            if (!string.IsNullOrEmpty(redisConnectionString))
+            {
+                services.AddStackExchangeRedisCache(options =>
+                {
+                    options.Configuration = redisConnectionString;
+                    options.InstanceName = redisInstanceName;
+                });
+
+                // Registrar ConnectionMultiplexer para acceso directo si es necesario
+                services.AddSingleton<IConnectionMultiplexer>(sp =>
+                {
+                    return ConnectionMultiplexer.Connect(redisConnectionString);
+                });
+
+                Log.Information("Redis configurado: {ConnectionString}, Instance: {InstanceName}", redisConnectionString, redisInstanceName);
+            }
+            else
+            {
+                Log.Warning("Redis no configurado. Usando memoria en su lugar.");
+                services.AddDistributedMemoryCache();
+            }
 
             return services;
         }

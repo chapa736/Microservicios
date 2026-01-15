@@ -5,6 +5,7 @@ using Seguros.Core.Common;
 using Seguros.Core.Interfaces.Domain;
 using Seguros.Core.Exceptions;
 using Seguros.Domain.Entities;
+using Seguros.Core.Interfaces.Application;
 using Serilog;
 
 namespace Seguros.Application.Handlers
@@ -12,10 +13,14 @@ namespace Seguros.Application.Handlers
     public class CreateClienteCommandHandler : IRequestHandler<CreateClienteCommand, BaseResponse<ClienteDto>>
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IAuthApiService _authApiService;
+        private readonly ICacheService _cacheService;
 
-        public CreateClienteCommandHandler(IUnitOfWork unitOfWork)
+        public CreateClienteCommandHandler(IUnitOfWork unitOfWork, IAuthApiService authApiService, ICacheService cacheService)
         {
             _unitOfWork = unitOfWork;
+            _authApiService = authApiService;
+            _cacheService = cacheService;
         }
 
         public async Task<BaseResponse<ClienteDto>> Handle(CreateClienteCommand request, CancellationToken cancellationToken)
@@ -29,6 +34,26 @@ namespace Seguros.Application.Handlers
                     throw new DuplicateException($"Ya existe un cliente con el número de identificación {request.NumeroIdentificacion}");
                 }
 
+                var sNombre = request.Nombre.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                var username = $"{request.ApPaterno[0]}{request.ApMaterno[0]}{sNombre[0]}".ToLower().Replace(" ", "");
+                if (username.Length > 15) username = username.Substring(0, 15);
+
+                // Crear usuario en Auth API
+                var registerRequest = new RegisterUserRequest
+                {
+                    Username = username,
+                    Email = request.Email,
+                    Password = request.NumeroIdentificacion, // Contraseña = número de identificación
+                    RoleId = 2 // CLIENTE
+                };
+
+                var userResponse = await _authApiService.RegisterUserAsync(registerRequest);
+
+                if (!userResponse.Success)
+                {
+                    throw new BusinessException($"Error al crear usuario: {userResponse.Message}");
+                }
+
                 var cliente = new Cliente
                 {
                     NumeroIdentificacion = request.NumeroIdentificacion,
@@ -38,14 +63,18 @@ namespace Seguros.Application.Handlers
                     Telefono = request.Telefono,
                     Email = request.Email,
                     Direccion = request.Direccion,
-                    UserId = request.UserId
+                    UserId = userResponse.Data.Id
                 };
 
                 await _unitOfWork.Clientes.AddAsync(cliente);
                 await _unitOfWork.SaveChangesAsync();
                 await _unitOfWork.CommitTransactionAsync();
 
-                Log.Information("Cliente creado exitosamente: {ClienteId} - {NumeroIdentificacion}", cliente.Id, cliente.NumeroIdentificacion);
+                Log.Information("Cliente y usuario creados exitosamente: ClienteId={ClienteId}, UserId={UserId}, Username={Username}", 
+                    cliente.Id, userResponse.Data.Id, username);
+
+                // Invalidar caché de lista de clientes
+                await _cacheService.RemoveAsync("clientes:all", cancellationToken);
 
                 return new BaseResponse<ClienteDto>
                 {
@@ -63,7 +92,7 @@ namespace Seguros.Application.Handlers
                         FechaCreacion = cliente.FechaCreacion,
                         NombreCompleto = cliente.NombreCompleto
                     },
-                    Message = "Cliente creado exitosamente"
+                    Message = $"Cliente creado exitosamente. Usuario: {username}, Contraseña: {request.NumeroIdentificacion}"
                 };
             }
             catch (Exception ex)
@@ -83,10 +112,12 @@ namespace Seguros.Application.Handlers
     public class UpdateClienteCommandHandler : IRequestHandler<UpdateClienteCommand, BaseResponse<ClienteDto>>
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly ICacheService _cacheService;
 
-        public UpdateClienteCommandHandler(IUnitOfWork unitOfWork)
+        public UpdateClienteCommandHandler(IUnitOfWork unitOfWork, ICacheService cacheService)
         {
             _unitOfWork = unitOfWork;
+            _cacheService = cacheService;
         }
 
         public async Task<BaseResponse<ClienteDto>> Handle(UpdateClienteCommand request, CancellationToken cancellationToken)
@@ -115,13 +146,19 @@ namespace Seguros.Application.Handlers
                 if (!string.IsNullOrEmpty(request.Direccion))
                     cliente.Direccion = request.Direccion;
 
-                cliente.FechaActualizacion = DateTime.Now;
+                cliente.FechaActualizacion = DateTime.UtcNow;
 
                 await _unitOfWork.Clientes.UpdateAsync(cliente);
                 await _unitOfWork.SaveChangesAsync();
                 await _unitOfWork.CommitTransactionAsync();
 
                 Log.Information("Cliente actualizado exitosamente: {ClienteId}", cliente.Id);
+
+                // Invalidar caché relacionado con este cliente
+                await _cacheService.RemoveAsync($"cliente:userid:{cliente.UserId}", cancellationToken);
+                await _cacheService.RemoveAsync($"cliente:id:{cliente.Id}", cancellationToken);
+                await _cacheService.RemoveAsync($"cliente:identificacion:{cliente.NumeroIdentificacion}", cancellationToken);
+                await _cacheService.RemoveAsync("clientes:all", cancellationToken);
 
                 return new BaseResponse<ClienteDto>
                 {
@@ -160,10 +197,12 @@ namespace Seguros.Application.Handlers
     public class DeleteClienteCommandHandler : IRequestHandler<DeleteClienteCommand, BaseResponse<bool>>
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly ICacheService _cacheService;
 
-        public DeleteClienteCommandHandler(IUnitOfWork unitOfWork)
+        public DeleteClienteCommandHandler(IUnitOfWork unitOfWork, ICacheService cacheService)
         {
             _unitOfWork = unitOfWork;
+            _cacheService = cacheService;
         }
 
         public async Task<BaseResponse<bool>> Handle(DeleteClienteCommand request, CancellationToken cancellationToken)
@@ -179,11 +218,18 @@ namespace Seguros.Application.Handlers
                     throw new NotFoundException($"Cliente con ID {request.Id} no encontrado");
                 }
 
+                await _unitOfWork.Polizas.DeleteAsyncByClienteIdAsync(request.Id);
                 await _unitOfWork.Clientes.DeleteAsync(request.Id);
                 await _unitOfWork.SaveChangesAsync();
                 await _unitOfWork.CommitTransactionAsync();
 
                 Log.Information("Cliente eliminado exitosamente: {ClienteId}", request.Id);
+
+                // Invalidar caché relacionado con este cliente
+                await _cacheService.RemoveAsync($"cliente:userid:{cliente.UserId}", cancellationToken);
+                await _cacheService.RemoveAsync($"cliente:id:{cliente.Id}", cancellationToken);
+                await _cacheService.RemoveAsync($"cliente:identificacion:{cliente.NumeroIdentificacion}", cancellationToken);
+                await _cacheService.RemoveAsync("clientes:all", cancellationToken);
 
                 return new BaseResponse<bool>
                 {
