@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "src\\Auth\\Auth.WebAPI\\Auth.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "Auth.API"
+      },
+      {
+        "Path": "src\\Seguros\\Seguros.WebAPI\\Seguros.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "Seguros.API"
+      }
+    ]
+  }
+]

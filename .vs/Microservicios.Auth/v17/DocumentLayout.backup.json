@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Prueba_Zurich\\Microservicios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF1E4E7-212F-69F8-9E46-521B8C1B80E2}|src\\Seguros\\Seguros.WebAPI\\Seguros.API.csproj|e:\\prueba_zurich\\microservicios\\src\\seguros\\seguros.webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF1E4E7-212F-69F8-9E46-521B8C1B80E2}|src\\Seguros\\Seguros.WebAPI\\Seguros.API.csproj|solutionrelative:src\\seguros\\seguros.webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55750496-213C-403D-9F3B-5F3D5629963E}|src\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj|e:\\prueba_zurich\\microservicios\\src\\auth\\auth.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55750496-213C-403D-9F3B-5F3D5629963E}|src\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj|solutionrelative:src\\auth\\auth.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ACEE15D-19CC-4B88-BDEB-7933019CBAC6}|src\\Auth\\Auth.WebAPI\\Auth.API.csproj|e:\\prueba_zurich\\microservicios\\src\\auth\\auth.webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ACEE15D-19CC-4B88-BDEB-7933019CBAC6}|src\\Auth\\Auth.WebAPI\\Auth.API.csproj|solutionrelative:src\\auth\\auth.webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB1F51E-A4EA-4F72-929A-A69B34864898}|src\\Auth\\Auth.Application\\Auth.Application.csproj|e:\\prueba_zurich\\microservicios\\src\\auth\\auth.application\\handlers\\authcommandhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB1F51E-A4EA-4F72-929A-A69B34864898}|src\\Auth\\Auth.Application\\Auth.Application.csproj|solutionrelative:src\\auth\\auth.application\\handlers\\authcommandhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55750496-213C-403D-9F3B-5F3D5629963E}|src\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj|e:\\prueba_zurich\\microservicios\\src\\auth\\auth.infrastructure\\middleware\\custommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55750496-213C-403D-9F3B-5F3D5629963E}|src\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj|solutionrelative:src\\auth\\auth.infrastructure\\middleware\\custommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31452B56-19C7-4173-BCB8-F30ADE3AAB1C}|src\\Auth\\Auth.Domain\\Auth.Domain.csproj|e:\\prueba_zurich\\microservicios\\src\\auth\\auth.domain\\entities\\authentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31452B56-19C7-4173-BCB8-F30ADE3AAB1C}|src\\Auth\\Auth.Domain\\Auth.Domain.csproj|solutionrelative:src\\auth\\auth.domain\\entities\\authentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC47D47-1BF3-4628-BDA4-CA85EACBD9FF}|src\\Seguros\\Seguros.Domain\\Seguros.Domain.csproj|e:\\prueba_zurich\\microservicios\\src\\seguros\\seguros.domain\\entities\\segurosentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC47D47-1BF3-4628-BDA4-CA85EACBD9FF}|src\\Seguros\\Seguros.Domain\\Seguros.Domain.csproj|solutionrelative:src\\seguros\\seguros.domain\\entities\\segurosentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF1E4E7-212F-69F8-9E46-521B8C1B80E2}|src\\Seguros\\Seguros.WebAPI\\Seguros.API.csproj|e:\\prueba_zurich\\microservicios\\src\\seguros\\seguros.webapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF1E4E7-212F-69F8-9E46-521B8C1B80E2}|src\\Seguros\\Seguros.WebAPI\\Seguros.API.csproj|solutionrelative:src\\seguros\\seguros.webapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ACEE15D-19CC-4B88-BDEB-7933019CBAC6}|src\\Auth\\Auth.WebAPI\\Auth.API.csproj|e:\\prueba_zurich\\microservicios\\src\\auth\\auth.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ACEE15D-19CC-4B88-BDEB-7933019CBAC6}|src\\Auth\\Auth.WebAPI\\Auth.API.csproj|solutionrelative:src\\auth\\auth.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D54E6C13-21AB-4781-2D0D-4BB0018E24BF}|src\\Seguros\\Seguros.Infrastructure\\Seguros.Infrastructure.csproj|e:\\prueba_zurich\\microservicios\\src\\seguros\\seguros.infrastructure\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D54E6C13-21AB-4781-2D0D-4BB0018E24BF}|src\\Seguros\\Seguros.Infrastructure\\Seguros.Infrastructure.csproj|solutionrelative:src\\seguros\\seguros.infrastructure\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A0CCBA-4882-4033-B578-44CF4F5ACD7D}|src\\Seguros\\Seguros.Application\\Seguros.Application.csproj|e:\\prueba_zurich\\microservicios\\src\\seguros\\seguros.application\\handlers\\clientecommandhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A0CCBA-4882-4033-B578-44CF4F5ACD7D}|src\\Seguros\\Seguros.Application\\Seguros.Application.csproj|solutionrelative:src\\seguros\\seguros.application\\handlers\\clientecommandhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55750496-213C-403D-9F3B-5F3D5629963E}|src\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj|e:\\prueba_zurich\\microservicios\\src\\auth\\auth.infrastructure\\data\\dapperrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55750496-213C-403D-9F3B-5F3D5629963E}|src\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj|solutionrelative:src\\auth\\auth.infrastructure\\data\\dapperrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF1E4E7-212F-69F8-9E46-521B8C1B80E2}|src\\Seguros\\Seguros.WebAPI\\Seguros.API.csproj|e:\\prueba_zurich\\microservicios\\src\\seguros\\seguros.webapi\\controllers\\polizascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF1E4E7-212F-69F8-9E46-521B8C1B80E2}|src\\Seguros\\Seguros.WebAPI\\Seguros.API.csproj|solutionrelative:src\\seguros\\seguros.webapi\\controllers\\polizascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Auth.WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "src\\Auth\\Auth.WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAYwJQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T15:32:41.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClienteCommandHandlers.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.Application\\Handlers\\ClienteCommandHandlers.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Seguros.Application\\Handlers\\ClienteCommandHandlers.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.Application\\Handlers\\ClienteCommandHandlers.cs",
+              "RelativeToolTip": "src\\Seguros\\Seguros.Application\\Handlers\\ClienteCommandHandlers.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAhwHUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T15:05:17.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomMiddleware.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Infrastructure\\Middleware\\CustomMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Auth.Infrastructure\\Middleware\\CustomMiddleware.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Infrastructure\\Middleware\\CustomMiddleware.cs",
+              "RelativeToolTip": "src\\Auth\\Auth.Infrastructure\\Middleware\\CustomMiddleware.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAADgv14AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T15:04:53.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Infrastructure\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Auth.Infrastructure\\Services\\TokenService.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Infrastructure\\Services\\TokenService.cs",
+              "RelativeToolTip": "src\\Auth\\Auth.Infrastructure\\Services\\TokenService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T15:03:29.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthEntities.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Domain\\Entities\\AuthEntities.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Auth.Domain\\Entities\\AuthEntities.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Domain\\Entities\\AuthEntities.cs",
+              "RelativeToolTip": "src\\Auth\\Auth.Domain\\Entities\\AuthEntities.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAD4v04AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T14:57:36.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthCommandHandlers.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Application\\Handlers\\AuthCommandHandlers.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Auth.Application\\Handlers\\AuthCommandHandlers.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Application\\Handlers\\AuthCommandHandlers.cs",
+              "RelativeToolTip": "src\\Auth\\Auth.Application\\Handlers\\AuthCommandHandlers.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAD4vzsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T14:57:12.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DapperRepositories.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Infrastructure\\Data\\DapperRepositories.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Auth.Infrastructure\\Data\\DapperRepositories.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.Infrastructure\\Data\\DapperRepositories.cs",
+              "RelativeToolTip": "src\\Auth\\Auth.Infrastructure\\Data\\DapperRepositories.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAiwKkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T14:56:18.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PolizasController.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.WebAPI\\Controllers\\PolizasController.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Seguros.WebAPI\\Controllers\\PolizasController.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.WebAPI\\Controllers\\PolizasController.cs",
+              "RelativeToolTip": "src\\Seguros\\Seguros.WebAPI\\Controllers\\PolizasController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T14:43:03.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.WebAPI\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Seguros.WebAPI\\Controllers\\ClientesController.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.WebAPI\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "src\\Seguros\\Seguros.WebAPI\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T14:42:34.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Seguros.WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "src\\Seguros\\Seguros.WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAwwH8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T14:38:50.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SegurosEntities.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.Domain\\Entities\\SegurosEntities.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Seguros.Domain\\Entities\\SegurosEntities.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.Domain\\Entities\\SegurosEntities.cs",
+              "RelativeToolTip": "src\\Seguros\\Seguros.Domain\\Entities\\SegurosEntities.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAIA3wD8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T15:05:25.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Auth.WebAPI\\Program.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Auth\\Auth.WebAPI\\Program.cs",
+              "RelativeToolTip": "src\\Auth\\Auth.WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T14:38:44.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.Infrastructure\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Seguros.Infrastructure\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "E:\\Prueba_Zurich\\Microservicios\\src\\Seguros\\Seguros.Infrastructure\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "src\\Seguros\\Seguros.Infrastructure\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowEIAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T14:37:39.454Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

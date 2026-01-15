@@ -1,0 +1,473 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Middleware\\CustomMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Infrastructure\\Middleware\\CustomMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\LoggingExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\LoggingExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Application\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Application\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\SwaggerExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\SwaggerExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.WebAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Application\\DTOs\\AuthDTOs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Application\\DTOs\\AuthDTOs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Core\\Commands\\AuthCommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Core\\Commands\\AuthCommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Core\\Enums\\AuthEnums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Core\\Enums\\AuthEnums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Persistence\\Context\\AuthDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Persistence\\Context\\AuthDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Services\\TokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.Infrastructure\\Services\\TokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.WebAPI\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Domain\\Entities\\SegurosEntities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Seguros\\Finasist.Seguros.Domain\\Entities\\SegurosEntities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Application\\IServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Application\\IServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Domain\\IRepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Domain\\IRepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Application\\Services\\ClienteService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Seguros\\Finasist.Seguros.Application\\Services\\ClienteService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Application\\DTOs\\SegurosDTOs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Seguros\\Finasist.Seguros.Application\\DTOs\\SegurosDTOs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Finasist.Auth.WebAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.WebAPI\\Finasist.Auth.WebAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Auth\\Finasist.Auth.WebAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:38:28.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomMiddleware.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Middleware\\CustomMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Infrastructure\\Middleware\\CustomMiddleware.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Middleware\\CustomMiddleware.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Infrastructure\\Middleware\\CustomMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:39:11.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoggingExtensions.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\LoggingExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\LoggingExtensions.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\LoggingExtensions.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\LoggingExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:38:55.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SwaggerExtensions.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\SwaggerExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\SwaggerExtensions.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\SwaggerExtensions.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Infrastructure\\Extensions\\SwaggerExtensions.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:39:27.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Application\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:18:13.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.WebAPI\\appsettings.json",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\appsettings.json",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-14T07:07:34.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthDTOs.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Application\\DTOs\\AuthDTOs.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Application\\DTOs\\AuthDTOs.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Application\\DTOs\\AuthDTOs.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Application\\DTOs\\AuthDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:41:24.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthCommands.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Core\\Commands\\AuthCommands.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Core\\Commands\\AuthCommands.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Core\\Commands\\AuthCommands.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Core\\Commands\\AuthCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:41:13.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthEnums.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Core\\Enums\\AuthEnums.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Core\\Enums\\AuthEnums.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Core\\Enums\\AuthEnums.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Core\\Enums\\AuthEnums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:41:00.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthDbContext.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Persistence\\Context\\AuthDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Persistence\\Context\\AuthDbContext.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Persistence\\Context\\AuthDbContext.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Persistence\\Context\\AuthDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:40:31.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.Infrastructure\\Services\\TokenService.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.Infrastructure\\Services\\TokenService.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.Infrastructure\\Services\\TokenService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:40:09.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SegurosEntities.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Domain\\Entities\\SegurosEntities.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Finasist.Seguros.Domain\\Entities\\SegurosEntities.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Domain\\Entities\\SegurosEntities.cs",
+              "RelativeToolTip": "src\\Seguros\\Finasist.Seguros.Domain\\Entities\\SegurosEntities.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:21:48.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IServices.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Application\\IServices.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Application\\IServices.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Application\\IServices.cs",
+              "RelativeToolTip": "src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Application\\IServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:21:37.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IRepositories.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Domain\\IRepositories.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Domain\\IRepositories.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Domain\\IRepositories.cs",
+              "RelativeToolTip": "src\\Seguros\\Finasist.Seguros.Core\\Interfaces\\Domain\\IRepositories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:21:25.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Application\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Finasist.Seguros.Application\\Services\\ClienteService.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Application\\Services\\ClienteService.cs",
+              "RelativeToolTip": "src\\Seguros\\Finasist.Seguros.Application\\Services\\ClienteService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:20:50.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e2a55d0c-91c1-4be2-9005-24d124232b4f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:17:31.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SegurosDTOs.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Application\\DTOs\\SegurosDTOs.cs",
+              "RelativeDocumentMoniker": "src\\Seguros\\Finasist.Seguros.Application\\DTOs\\SegurosDTOs.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Seguros\\Finasist.Seguros.Application\\DTOs\\SegurosDTOs.cs",
+              "RelativeToolTip": "src\\Seguros\\Finasist.Seguros.Application\\DTOs\\SegurosDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T01:20:43.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.WebAPI\\Program.cs",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Program.cs",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T00:01:50.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Finasist.Auth.WebAPI.csproj",
+              "DocumentMoniker": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Finasist.Auth.WebAPI.csproj",
+              "RelativeDocumentMoniker": "src\\Auth\\Finasist.Auth.WebAPI\\Finasist.Auth.WebAPI.csproj",
+              "ToolTip": "D:\\Desarrollo\\GIT\\Yunus\\Microservicios\\src\\Auth\\Finasist.Auth.WebAPI\\Finasist.Auth.WebAPI.csproj",
+              "RelativeToolTip": "src\\Auth\\Finasist.Auth.WebAPI\\Finasist.Auth.WebAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-13T23:59:17.069Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 115,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\bin\Debug\net6.0\Seguros.Application.deps.json
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\bin\Debug\net6.0\Seguros.Application.dll
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\bin\Debug\net6.0\Seguros.Application.pdb
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\bin\Debug\net6.0\Seguros.Core.dll
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\bin\Debug\net6.0\Seguros.Domain.dll
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\bin\Debug\net6.0\Seguros.Core.pdb
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\bin\Debug\net6.0\Seguros.Domain.pdb
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\Seguros.Application.csproj.AssemblyReference.cache
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\Seguros.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\Seguros.Application.AssemblyInfoInputs.cache
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\Seguros.Application.AssemblyInfo.cs
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\Seguros.Application.csproj.CoreCompileInputs.cache
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\Seguros..0C63148E.Up2Date
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\Seguros.Application.dll
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\refint\Seguros.Application.dll
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\Seguros.Application.pdb
+E:\Prueba_Zurich\Microservicios\src\Seguros\Seguros.Application\obj\Debug\net6.0\ref\Seguros.Application.dll

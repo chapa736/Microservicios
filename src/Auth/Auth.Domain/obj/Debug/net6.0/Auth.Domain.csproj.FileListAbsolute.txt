@@ -1,0 +1,11 @@
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\bin\Debug\net6.0\Auth.Domain.deps.json
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\bin\Debug\net6.0\Auth.Domain.dll
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\bin\Debug\net6.0\Auth.Domain.pdb
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\obj\Debug\net6.0\Auth.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\obj\Debug\net6.0\Auth.Domain.AssemblyInfoInputs.cache
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\obj\Debug\net6.0\Auth.Domain.AssemblyInfo.cs
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\obj\Debug\net6.0\Auth.Domain.csproj.CoreCompileInputs.cache
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\obj\Debug\net6.0\Auth.Domain.dll
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\obj\Debug\net6.0\refint\Auth.Domain.dll
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\obj\Debug\net6.0\Auth.Domain.pdb
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Domain\obj\Debug\net6.0\ref\Auth.Domain.dll

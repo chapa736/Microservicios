@@ -1,0 +1,17 @@
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\Auth.Application.csproj.AssemblyReference.cache
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\Auth.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\Auth.Application.AssemblyInfoInputs.cache
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\Auth.Application.AssemblyInfo.cs
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\Auth.Application.csproj.CoreCompileInputs.cache
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\bin\Debug\net6.0\Auth.Application.deps.json
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\bin\Debug\net6.0\Auth.Application.dll
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\bin\Debug\net6.0\Auth.Application.pdb
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\bin\Debug\net6.0\Auth.Core.dll
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\bin\Debug\net6.0\Auth.Domain.dll
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\bin\Debug\net6.0\Auth.Core.pdb
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\bin\Debug\net6.0\Auth.Domain.pdb
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\Auth.App.E6399BD7.Up2Date
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\Auth.Application.dll
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\refint\Auth.Application.dll
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\Auth.Application.pdb
+E:\Prueba_Zurich\Microservicios\src\Auth\Auth.Application\obj\Debug\net6.0\ref\Auth.Application.dll

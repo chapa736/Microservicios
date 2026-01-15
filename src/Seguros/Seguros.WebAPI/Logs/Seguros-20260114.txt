@@ -1,0 +1,55 @@
+[2026-01-14 08:06:34.330 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 08:07:15.750 -06:00 INF] HTTP GET /api/Clientes responded 401 in 905.3101 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJEOG5L0RJ:00000015","ConnectionId":"0HNIJEOG5L0RJ","Microservicio":"Seguros"}
+[2026-01-14 08:09:58.309 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 08:28:49.935 -06:00 INF] HTTP GET /api/Clientes responded 401 in 85.5128 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJEQD10CJJ:00000009","ConnectionId":"0HNIJEQD10CJJ","Microservicio":"Seguros"}
+[2026-01-14 08:29:58.573 -06:00 INF] HTTP GET /api/Clientes responded 401 in 2.1712 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJEQD10CJJ:0000000B","ConnectionId":"0HNIJEQD10CJJ","Microservicio":"Seguros"}
+[2026-01-14 08:33:20.164 -06:00 INF] HTTP GET /api/Clientes responded 401 in 7793.8648 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJEQD10CJJ:0000000D","ConnectionId":"0HNIJEQD10CJJ","Microservicio":"Seguros"}
+[2026-01-14 08:40:32.349 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 08:42:07.250 -06:00 INF] HTTP GET /api/Clientes responded 401 in 89.2723 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJFBG8HBV2:00000009","ConnectionId":"0HNIJFBG8HBV2","Microservicio":"Seguros"}
+[2026-01-14 08:43:38.865 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 08:44:51.286 -06:00 INF] HTTP GET /api/Clientes responded 401 in 92.4224 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJFD7GNS3A:00000009","ConnectionId":"0HNIJFD7GNS3A","Microservicio":"Seguros"}
+[2026-01-14 08:45:50.754 -06:00 INF] HTTP GET /api/Clientes responded 401 in 15.3434 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJFD7GNS3A:0000000B","ConnectionId":"0HNIJFD7GNS3A","Microservicio":"Seguros"}
+[2026-01-14 08:52:01.416 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 08:53:55.983 -06:00 WRN] JWT challenge: error=null description=null {"RequestId":"0HNIJFHT3EG1V:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJFHT3EG1V","Microservicio":"Seguros"}
+[2026-01-14 08:53:56.005 -06:00 INF] HTTP GET /api/Clientes responded 401 in 116.5381 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJFHT3EG1V:00000009","ConnectionId":"0HNIJFHT3EG1V","Microservicio":"Seguros"}
+[2026-01-14 08:58:33.598 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 09:01:49.798 -06:00 WRN] JWT challenge: error=null description=null {"RequestId":"0HNIJFLI9VS4E:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJFLI9VS4E","Microservicio":"Seguros"}
+[2026-01-14 09:01:49.826 -06:00 INF] HTTP GET /api/Clientes responded 401 in 121.4697 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJFLI9VS4E:00000009","ConnectionId":"0HNIJFLI9VS4E","Microservicio":"Seguros"}
+[2026-01-14 09:05:54.297 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 09:12:37.796 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 09:13:58.233 -06:00 WRN] JWT challenge: error=null description=null {"RequestId":"0HNIJFTDHROHO:0000000B","RequestPath":"/api/Clientes","ConnectionId":"0HNIJFTDHROHO","Microservicio":"Seguros"}
+[2026-01-14 09:13:58.257 -06:00 INF] HTTP GET /api/Clientes responded 401 in 131.0540 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJFTDHROHO:0000000B","ConnectionId":"0HNIJFTDHROHO","Microservicio":"Seguros"}
+[2026-01-14 09:23:38.970 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 09:25:20.860 -06:00 WRN] JWT challenge: error=null description=null {"RequestId":"0HNIJG3IFUUUJ:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJG3IFUUUJ","Microservicio":"Seguros"}
+[2026-01-14 09:25:20.883 -06:00 INF] HTTP GET /api/Clientes responded 401 in 114.8557 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJG3IFUUUJ:00000009","ConnectionId":"0HNIJG3IFUUUJ","Microservicio":"Seguros"}
+[2026-01-14 09:33:47.239 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 09:35:00.208 -06:00 WRN] JWT challenge: error=null description=null {"RequestId":"0HNIJG987NCBO:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJG987NCBO","Microservicio":"Seguros"}
+[2026-01-14 09:35:00.228 -06:00 INF] HTTP GET /api/Clientes responded 401 in 112.8522 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJG987NCBO:00000009","ConnectionId":"0HNIJG987NCBO","Microservicio":"Seguros"}
+[2026-01-14 09:38:33.798 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 09:39:17.463 -06:00 WRN] JWT challenge: error=null description=null {"RequestId":"0HNIJGBT3T6IL:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGBT3T6IL","Microservicio":"Seguros"}
+[2026-01-14 09:39:17.488 -06:00 INF] HTTP GET /api/Clientes responded 401 in 121.2534 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJGBT3T6IL:00000009","ConnectionId":"0HNIJGBT3T6IL","Microservicio":"Seguros"}
+[2026-01-14 09:40:39.978 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 09:41:23.791 -06:00 INF] Token received: true, Value: eyJhbGciOiJIUzI1NiIs... {"RequestId":"0HNIJGD2N96VH:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:41:23.826 -06:00 WRN] Token challenge - Error: null, ErrorDescription: null, AuthHeader: Present, HasToken: true {"RequestId":"0HNIJGD2N96VH:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:41:23.839 -06:00 INF] HTTP GET /api/Clientes responded 401 in 127.5333 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJGD2N96VH:00000009","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:44:34.953 -06:00 INF] Token received: true, Value: Bearer eyJhbGciOiJIU... {"RequestId":"0HNIJGD2N96VH:0000000B","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:44:35.951 -06:00 INF] JWT validado. usuario=null roles= {"RequestId":"0HNIJGD2N96VH:0000000B","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:44:36.008 -06:00 INF] HTTP GET /api/Clientes responded 403 in 1055.8830 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJGD2N96VH:0000000B","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:24.252 -06:00 INF] Token received: true, Value: Bearer eyJhbGciOiJIU... {"RequestId":"0HNIJGD2N96VH:0000000D","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:24.263 -06:00 INF] JWT validado. usuario=null roles= {"RequestId":"0HNIJGD2N96VH:0000000D","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:24.275 -06:00 INF] HTTP GET /api/Clientes responded 403 in 23.9688 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJGD2N96VH:0000000D","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:25.613 -06:00 INF] Token received: true, Value: Bearer eyJhbGciOiJIU... {"RequestId":"0HNIJGD2N96VH:0000000F","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:25.684 -06:00 INF] JWT validado. usuario=null roles= {"RequestId":"0HNIJGD2N96VH:0000000F","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:25.693 -06:00 INF] HTTP GET /api/Clientes responded 403 in 80.0807 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJGD2N96VH:0000000F","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:26.209 -06:00 INF] Token received: true, Value: Bearer eyJhbGciOiJIU... {"RequestId":"0HNIJGD2N96VH:00000011","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:26.222 -06:00 INF] JWT validado. usuario=null roles= {"RequestId":"0HNIJGD2N96VH:00000011","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:26.231 -06:00 INF] HTTP GET /api/Clientes responded 403 in 21.9137 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJGD2N96VH:00000011","ConnectionId":"0HNIJGD2N96VH","Microservicio":"Seguros"}
+[2026-01-14 09:49:36.601 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 09:50:52.169 -06:00 INF] Token received: true, Value: Bearer eyJhbGciOiJIU... {"RequestId":"0HNIJGI2KRBN2:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGI2KRBN2","Microservicio":"Seguros"}
+[2026-01-14 09:52:27.209 -06:00 INF] JWT validado. usuario=null roles= {"RequestId":"0HNIJGI2KRBN2:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGI2KRBN2","Microservicio":"Seguros"}
+[2026-01-14 09:52:27.239 -06:00 INF] HTTP GET /api/Clientes responded 403 in 95144.1600 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJGI2KRBN2:00000009","ConnectionId":"0HNIJGI2KRBN2","Microservicio":"Seguros"}
+[2026-01-14 09:54:12.114 -06:00 INF] Token received: true, Value: Bearer eyJhbGciOiJIU... {"RequestId":"0HNIJGI2KRBN2:0000000B","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGI2KRBN2","Microservicio":"Seguros"}
+[2026-01-14 10:03:14.352 -06:00 INF] Iniciando Finasist Seguros API {"Microservicio":"Seguros"}
+[2026-01-14 10:04:13.264 -06:00 INF] Token received: true, Value: BEARER eyJhbGciOiJIU... {"RequestId":"0HNIJGPN012G8:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGPN012G8","Microservicio":"Seguros"}
+[2026-01-14 10:04:20.852 -06:00 INF] JWT validado. usuario=chapa736 roles=ADMINISTRADOR {"RequestId":"0HNIJGPN012G8:00000009","RequestPath":"/api/Clientes","ConnectionId":"0HNIJGPN012G8","Microservicio":"Seguros"}
+[2026-01-14 10:04:26.401 -06:00 INF] HTTP GET /api/Clientes responded 200 in 13208.0649 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNIJGPN012G8:00000009","ConnectionId":"0HNIJGPN012G8","Microservicio":"Seguros"}

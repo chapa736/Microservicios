@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Finasist.Auth.WebAPI.props" />
+</Project>
