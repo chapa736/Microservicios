@@ -285,7 +285,6 @@ Buenas prácticas:
 - src/Seguros/Seguros.WebAPI/Extensions/ServiceCollectionExtensions.cs
 - src/Seguros/Seguros.WebAPI/Controllers/ClientesController.cs
 - src/Seguros/Seguros.WebAPI/Controllers/PolizasController.cs
-- src/Auth/GUIA_DESARROLLO.md (guía de desarrollo)
 
 ---
 
