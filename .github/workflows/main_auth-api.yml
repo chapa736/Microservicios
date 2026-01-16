@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - 'Auth.API/**'  # Solo se ejecuta cuando cambia Auth.API
+      - 'src/Auth/**'  # Solo se ejecuta cuando cambia algo en Auth
   workflow_dispatch:
 
 jobs:
@@ -23,22 +23,65 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '6.x'  # Cambiado a .NET 6
+          dotnet-version: '8.0.x'  # Actualizado a .NET 8.0
 
       - name: Restore dependencies
-        run: dotnet restore Auth.API/Auth.API.csproj
+        run: dotnet restore src/Auth/Auth.WebAPI/Auth.API.csproj
 
-      - name: Build with dotnet
-        run: dotnet build Auth.API/Auth.API.csproj --configuration Release --no-restore
+      - name: Build Auth.API
+        run: dotnet build src/Auth/Auth.WebAPI/Auth.API.csproj --configuration Release --no-restore
 
-      - name: dotnet publish
-        run: dotnet publish Auth.API/Auth.API.csproj -c Release -o ./publish
+      - name: Publish Auth.API (SOLO este proyecto)
+        run: |
+          dotnet publish src/Auth/Auth.WebAPI/Auth.API.csproj \
+            --configuration Release \
+            --no-build \
+            --output ./publish-auth \
+            --framework net8.0 \
+            --self-contained false \
+            /p:PublishReadyToRun=false \
+            /p:CopyLocalLockFileAssemblies=true
+
+      - name: Verificar qué se publicó
+        run: |
+          echo "=== Archivos en publish-auth ==="
+          ls -la ./publish-auth/ | head -30
+          echo ""
+          echo "=== DLLs publicados ==="
+          ls -la ./publish-auth/*.dll 2>/dev/null | head -20 || echo "No hay DLLs"
+          echo ""
+          echo "=== Verificando Microsoft.AspNetCore.Authentication.JwtBearer ==="
+          if [ -f "./publish-auth/Microsoft.AspNetCore.Authentication.JwtBearer.dll" ]; then
+            echo "✅ Microsoft.AspNetCore.Authentication.JwtBearer.dll encontrado"
+            ls -lh ./publish-auth/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+          else
+            echo "❌ ERROR: Microsoft.AspNetCore.Authentication.JwtBearer.dll NO encontrado"
+            find ./publish-auth -name "*JwtBearer*" -type f || echo "No encontrado en ningún lugar"
+            exit 1
+          fi
+          echo ""
+          echo "=== Verificando que NO haya archivos de Seguros ==="
+          if find ./publish-auth -name "*Seguros*" -type f | grep -q .; then
+            echo "⚠️ ADVERTENCIA: Se encontraron archivos de Seguros"
+            find ./publish-auth -name "*Seguros*" -type f
+          else
+            echo "✅ OK: No hay archivos de Seguros"
+          fi
+
+      - name: Eliminar archivos de Seguros (si existen)
+        run: |
+          cd ./publish-auth
+          rm -f Seguros.API.dll Seguros.API.pdb Seguros.API.deps.json Seguros.API.runtimeconfig.json
+          rm -f Seguros.Application.* Seguros.Core.* Seguros.Domain.* Seguros.Infrastructure.*
+          find . -maxdepth 1 -name "*Seguros*" -type f -delete 2>/dev/null || true
+          echo "=== Archivos después de limpiar ==="
+          ls -la *.dll 2>/dev/null | head -20 || echo "No hay DLLs"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ./publish
+          path: ./publish-auth
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,7 +95,36 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-          path: ./publish
+          path: ./publish-auth
+      
+      - name: Verificar contenido antes de deploy
+        run: |
+          echo "=== Archivos que se van a desplegar ==="
+          ls -la ./publish-auth/ | head -30
+          echo ""
+          echo "=== Verificando que NO haya Seguros.API.dll ==="
+          if [ -f "./publish-auth/Seguros.API.dll" ]; then
+            echo "ERROR: Seguros.API.dll todavía existe"
+            exit 1
+          else
+            echo "✅ OK: No hay Seguros.API.dll"
+          fi
+          echo ""
+          echo "=== Verificando Microsoft.AspNetCore.Authentication.JwtBearer ==="
+          if [ -f "./publish-auth/Microsoft.AspNetCore.Authentication.JwtBearer.dll" ]; then
+            echo "✅ Microsoft.AspNetCore.Authentication.JwtBearer.dll encontrado"
+          else
+            echo "❌ ERROR: Microsoft.AspNetCore.Authentication.JwtBearer.dll NO encontrado"
+            exit 1
+          fi
+          echo ""
+          echo "=== Verificando Auth.API.dll ==="
+          if [ -f "./publish-auth/Auth.API.dll" ]; then
+            echo "✅ Auth.API.dll encontrado"
+          else
+            echo "❌ ERROR: Auth.API.dll NO encontrado"
+            exit 1
+          fi
       
       - name: Login to Azure
         uses: azure/login@v2
@@ -65,8 +137,9 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'auth-api'  # Ajusta si tu App Service tiene otro nombre
+          app-name: 'auth-api'
           slot-name: 'Production'
-          package: ./publish  # Cambiado para apuntar al path correcto
+          package: ./publish-auth
 
           
+
