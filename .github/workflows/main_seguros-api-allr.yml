@@ -29,31 +29,76 @@ jobs:
         with:
           dotnet-version: '6.x'
 
-      - name: Restore dependencies
-        run: dotnet restore Seguros.API/Seguros.API.csproj
-
-      - name: Build Seguros.API
-        run: dotnet build Seguros.API/Seguros.API.csproj --configuration Release --no-restore
-
-      - name: Publish Seguros.API (solo este proyecto)
+      - name: Verificar estructura del proyecto
         run: |
+          echo "=== Verificando que Seguros.API.csproj existe ==="
+          ls -la Seguros.API/Seguros.API.csproj
+          echo ""
+          echo "=== Verificando archivos .sln ==="
+          find . -maxdepth 1 -name "*.sln" -type f
+
+      - name: Restore dependencies (SOLO Seguros.API)
+        run: |
+          # Restaurar SOLO el proyecto Seguros.API, no la solución
+          dotnet restore Seguros.API/Seguros.API.csproj --no-dependencies
+          # Luego restaurar todas las dependencias del proyecto
+          dotnet restore Seguros.API/Seguros.API.csproj
+
+      - name: Build Seguros.API (SOLO este proyecto)
+        run: |
+          # Build SOLO del proyecto, no de la solución
+          dotnet build Seguros.API/Seguros.API.csproj \
+            --configuration Release \
+            --no-restore \
+            --no-incremental
+
+      - name: Publish Seguros.API (SOLO este proyecto)
+        run: |
+          # Publicar SOLO el proyecto Seguros.API
+          # Usar --no-build para usar el build anterior
           dotnet publish Seguros.API/Seguros.API.csproj \
             --configuration Release \
             --output ./publish-seguros \
             --no-build \
-            --self-contained false
+            --self-contained false \
+            --verbosity minimal
 
-      - name: Limpiar archivos de Auth.API si existen
+      - name: Verificar qué se publicó
         run: |
           cd ./publish-seguros
-          # Eliminar cualquier DLL de Auth.API que pueda haber sido incluido
-          find . -name "Auth.API.dll" -delete || true
-          find . -name "Auth.API.pdb" -delete || true
-          find . -name "*Auth*" -type f -delete || true
-          echo "Archivos después de limpiar:"
-          ls -la *.dll || echo "No hay DLLs en la raíz"
-          echo "Todos los DLLs:"
-          find . -name "*.dll" -type f || echo "No hay DLLs"
+          echo "=== Archivos publicados (primeros 50) ==="
+          ls -la | head -50
+          echo ""
+          echo "=== DLLs publicados ==="
+          ls -la *.dll 2>/dev/null | head -20 || echo "No hay DLLs en la raíz"
+
+      - name: Eliminar TODOS los archivos de Auth.API
+        run: |
+          cd ./publish-seguros
+          echo "=== Eliminando archivos de Auth.API ==="
+          # Eliminar todos los archivos relacionados con Auth
+          rm -f Auth.API.dll Auth.API.pdb Auth.API.deps.json Auth.API.runtimeconfig.json Auth.API.staticwebassets.endpoints.json
+          rm -f Auth.Application.dll Auth.Application.pdb Auth.Application.deps.json
+          rm -f Auth.Core.dll Auth.Core.pdb Auth.Core.deps.json
+          rm -f Auth.Domain.dll Auth.Domain.pdb Auth.Domain.deps.json
+          rm -f Auth.Infrastructure.dll Auth.Infrastructure.pdb Auth.Infrastructure.deps.json
+          # Eliminar cualquier otro archivo que contenga "Auth" en el nombre
+          find . -maxdepth 1 -type f -name "*Auth*" -delete 2>/dev/null || true
+          # Eliminar el directorio Auth.API si existe
+          rm -rf Auth.API 2>/dev/null || true
+          echo ""
+          echo "=== Verificando que no queden archivos de Auth ==="
+          if find . -maxdepth 1 -name "*Auth*" -type f 2>/dev/null | grep -q .; then
+            echo "ADVERTENCIA: Aún hay archivos de Auth:"
+            find . -maxdepth 1 -name "*Auth*" -type f
+            # Forzar eliminación
+            find . -maxdepth 1 -name "*Auth*" -type f -delete
+          else
+            echo "OK: No quedan archivos de Auth"
+          fi
+          echo ""
+          echo "=== DLLs restantes ==="
+          ls -la *.dll 2>/dev/null | head -20 || echo "No hay DLLs"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -75,20 +120,33 @@ jobs:
           name: .net-app
           path: ./publish-seguros
       
-      - name: Verificar contenido final
+      - name: Verificación final y limpieza
         run: |
-          echo "=== Archivos que se van a desplegar ==="
-          ls -la ./publish-seguros/
+          cd ./publish-seguros
+          echo "=== Verificando archivos antes del deployment ==="
+          # Eliminar cualquier archivo de Auth que pueda haber quedado
+          find . -maxdepth 1 -name "*Auth*" -type f -delete 2>/dev/null || true
+          find . -maxdepth 1 -name "*Auth*" -type d -exec rm -rf {} + 2>/dev/null || true
           echo ""
-          echo "=== DLLs que se van a desplegar ==="
-          find ./publish-seguros -name "*.dll" -type f | head -20
-          echo ""
-          echo "=== Verificando si hay Auth.API.dll ==="
-          if find ./publish-seguros -name "Auth.API.dll" -type f | grep -q .; then
-            echo "ERROR: Se encontró Auth.API.dll - esto no debería pasar"
+          echo "=== Verificando que NO haya Auth.API.dll ==="
+          if [ -f "Auth.API.dll" ]; then
+            echo "ERROR: Auth.API.dll todavía existe - eliminando..."
+            rm -f Auth.API.dll Auth.API.*
             exit 1
           else
-            echo "OK: No se encontró Auth.API.dll"
+            echo "OK: Auth.API.dll no existe"
+          fi
+          echo ""
+          echo "=== DLLs que se van a desplegar ==="
+          ls -la *.dll 2>/dev/null | grep -i seguros || echo "No se encontraron DLLs de Seguros"
+          echo ""
+          echo "=== Verificando que NO haya DLLs de Auth ==="
+          if ls -la *.dll 2>/dev/null | grep -i auth | grep -q .; then
+            echo "ERROR: Se encontraron DLLs de Auth - eliminando..."
+            rm -f *Auth*.dll *Auth*.pdb *Auth*.deps.json
+            exit 1
+          else
+            echo "OK: No hay DLLs de Auth"
           fi
       
       - name: Login to Azure
