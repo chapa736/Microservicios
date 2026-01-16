@@ -5,11 +5,11 @@ on:
     branches:
       - main
     paths:
-      - 'Seguros.API/**'
-      - 'Seguros.Application/**'
-      - 'Seguros.Core/**'
-      - 'Seguros.Domain/**'
-      - 'Seguros.Infrastructure/**'
+      - 'src/Seguros/**'
+      - 'src/Seguros.Application/**'
+      - 'src/Seguros.Core/**'
+      - 'src/Seguros.Domain/**'
+      - 'src/Seguros.Infrastructure/**'
   workflow_dispatch:
 
 jobs:
@@ -27,13 +27,13 @@ jobs:
           dotnet-version: '6.x'
 
       - name: Restore dependencies
-        run: dotnet restore Seguros.API/Seguros.API.csproj
+        run: dotnet restore src/Seguros/Seguros.WebAPI/Seguros.API.csproj
 
       - name: Build Seguros.API
-        run: dotnet build Seguros.API/Seguros.API.csproj --configuration Release --no-restore
+        run: dotnet build src/Seguros/Seguros.WebAPI/Seguros.API.csproj --configuration Release --no-restore
 
       - name: Publish Seguros.API (SOLO este proyecto)
-        run: dotnet publish Seguros.API/Seguros.API.csproj -c Release -o ./publish-seguros
+        run: dotnet publish src/Seguros/Seguros.WebAPI/Seguros.API.csproj -c Release -o ./publish-seguros
 
       - name: Verificar qué se publicó
         run: |
@@ -99,5 +99,6 @@ jobs:
           app-name: 'seguros-api-allr'
           slot-name: 'Production'
           package: ./publish-seguros
+
 
 
