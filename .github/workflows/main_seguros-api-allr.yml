@@ -32,15 +32,25 @@ jobs:
       - name: Build Seguros.API
         run: dotnet build Seguros.API/Seguros.API.csproj --configuration Release --no-restore
 
-      - name: Publish Seguros.API
+      - name: Publish Seguros.API (SOLO este proyecto)
         run: dotnet publish Seguros.API/Seguros.API.csproj -c Release -o ./publish-seguros
+
+      - name: Verificar qué se publicó
+        run: |
+          echo "=== Archivos en publish-seguros ==="
+          ls -la ./publish-seguros/ | head -30
+          echo ""
+          echo "=== DLLs publicados ==="
+          ls -la ./publish-seguros/*.dll 2>/dev/null | head -20 || echo "No hay DLLs"
 
       - name: Eliminar archivos de Auth.API
         run: |
           cd ./publish-seguros
-          rm -f Auth.API.dll Auth.API.pdb Auth.API.deps.json Auth.API.runtimeconfig.json
+          rm -f Auth.API.dll Auth.API.pdb Auth.API.deps.json Auth.API.runtimeconfig.json Auth.API.staticwebassets.endpoints.json
           rm -f Auth.Application.* Auth.Core.* Auth.Domain.* Auth.Infrastructure.*
           find . -maxdepth 1 -name "*Auth*" -type f -delete 2>/dev/null || true
+          echo "=== Archivos después de limpiar ==="
+          ls -la *.dll 2>/dev/null | head -20 || echo "No hay DLLs"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -61,6 +71,19 @@ jobs:
         with:
           name: .net-app
           path: ./publish-seguros
+      
+      - name: Verificar contenido antes de deploy
+        run: |
+          echo "=== Archivos que se van a desplegar ==="
+          ls -la ./publish-seguros/ | head -30
+          echo ""
+          echo "=== Verificando que NO haya Auth.API.dll ==="
+          if [ -f "./publish-seguros/Auth.API.dll" ]; then
+            echo "ERROR: Auth.API.dll todavía existe"
+            exit 1
+          else
+            echo "OK: No hay Auth.API.dll"
+          fi
       
       - name: Login to Azure
         uses: azure/login@v2
