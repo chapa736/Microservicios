@@ -9,6 +9,10 @@ on:
       - main
     paths:
       - 'Seguros.API/**'
+      - 'Seguros.Application/**'
+      - 'Seguros.Core/**'
+      - 'Seguros.Domain/**'
+      - 'Seguros.Infrastructure/**'
   workflow_dispatch:
 
 jobs:
@@ -28,11 +32,28 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore Seguros.API/Seguros.API.csproj
 
-      - name: Build with dotnet
+      - name: Build Seguros.API
         run: dotnet build Seguros.API/Seguros.API.csproj --configuration Release --no-restore
 
-      - name: dotnet publish
-        run: dotnet publish Seguros.API/Seguros.API.csproj -c Release -o ./publish-seguros
+      - name: Publish Seguros.API (solo este proyecto)
+        run: |
+          dotnet publish Seguros.API/Seguros.API.csproj \
+            --configuration Release \
+            --output ./publish-seguros \
+            --no-build \
+            --self-contained false
+
+      - name: Limpiar archivos de Auth.API si existen
+        run: |
+          cd ./publish-seguros
+          # Eliminar cualquier DLL de Auth.API que pueda haber sido incluido
+          find . -name "Auth.API.dll" -delete || true
+          find . -name "Auth.API.pdb" -delete || true
+          find . -name "*Auth*" -type f -delete || true
+          echo "Archivos después de limpiar:"
+          ls -la *.dll || echo "No hay DLLs en la raíz"
+          echo "Todos los DLLs:"
+          find . -name "*.dll" -type f || echo "No hay DLLs"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -54,6 +75,22 @@ jobs:
           name: .net-app
           path: ./publish-seguros
       
+      - name: Verificar contenido final
+        run: |
+          echo "=== Archivos que se van a desplegar ==="
+          ls -la ./publish-seguros/
+          echo ""
+          echo "=== DLLs que se van a desplegar ==="
+          find ./publish-seguros -name "*.dll" -type f | head -20
+          echo ""
+          echo "=== Verificando si hay Auth.API.dll ==="
+          if find ./publish-seguros -name "Auth.API.dll" -type f | grep -q .; then
+            echo "ERROR: Se encontró Auth.API.dll - esto no debería pasar"
+            exit 1
+          else
+            echo "OK: No se encontró Auth.API.dll"
+          fi
+      
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -68,5 +105,5 @@ jobs:
           app-name: 'seguros-api-allr'
           slot-name: 'Production'
           package: ./publish-seguros
-          
+
 
