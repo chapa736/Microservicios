@@ -20,15 +20,15 @@ builder.Services.AddHealthChecksConfiguration(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
-if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Docker"))
+//if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Docker"))
+//{
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth API v1");
-        c.RoutePrefix = string.Empty; // Swagger en la raíz
-    });
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth API v1");
+    c.RoutePrefix = string.Empty; // Swagger en la raíz
+});
+//}
 
 // Middleware pipeline
 app.UseSerilogRequestLogging();
